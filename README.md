@@ -1,7 +1,8 @@
+
+## [Ссылка на мое решение - gh-pages](https://chapion777.github.io/test-curses/)
+
+
 # Задание:
-
- ## [Ссылка gh-pages](https://chapion777.github.io/test-curses/)
-
 ## Существует API эндпоинт 
 
 ```GET
