@@ -1,0 +1,13 @@
+@import '../../vendor/styles/variables';
+
+.Main {
+  width: 80vw;
+  background: $white-color;
+  padding: 24px;
+  height: 486px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  gap: 24px;
+  position: relative;
+}
