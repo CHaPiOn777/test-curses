@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/test-curses/static/css/main.4469208b.css",
+    "main.js": "/test-curses/static/js/main.50bb5b2a.js",
+    "static/media/Nunito-VariableFont_wght.ttf": "/test-curses/static/media/Nunito-VariableFont_wght.c0f0807a40aebdc41b40.ttf",
+    "index.html": "/test-curses/index.html",
+    "main.4469208b.css.map": "/test-curses/static/css/main.4469208b.css.map",
+    "main.50bb5b2a.js.map": "/test-curses/static/js/main.50bb5b2a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4469208b.css",
+    "static/js/main.50bb5b2a.js"
+  ]
+}
