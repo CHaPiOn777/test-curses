@@ -1,46 +1,23 @@
-# Getting Started with Create React App
+# Задание:
+## Существует API эндпоинт 
+ 
+```GET
+    https://logiclike.com/docs/courses.json
+```
+API эндпоинт возвращает список образовательных курсов платформы. Каждый курс имеет “тэги”, темы к которым этот курс относится. Например курс шахматы относится к темам “Головоломки”, “Шахматы” и “Логика и мышление”. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ваша задача разработать простую страницу, согласно макету, которая выводит список курсов и позволяет отфильтровать курсы по выбранной теме(tags). Весь контент, включая список тем должен формироваться динамически исходя из ответа от бэкэнда.
 
-## Available Scripts
+## [Макет:] (https://www.figma.com/file/gngIKlPiSuWmtoJPIfWHs8/Interview-Frontend?type=design&node-id=711-535&mode=design&t=RUg2M0Dhe5nPRGyb-4)
 
-In the project directory, you can run:
+Поведение на разных разрешениях экрана показано в виде отдельного фрейма. Блок с “тэгами” является фиксированным по ширине. Блок справа занимает все оставшееся место. В одной строчке выводится ровно 3 курса, которые делят между собой доступное место.
+## Требования
+* Использовать React, TypeScript, SCSS
+* Pixel perfect
+* Код пишите так, как вы бы писали на реальном проекте
+* Можно использовать любые библиотеки, кроме стейт менеджеров (Redux, Zustand, MobX, ...)
+* Поддержка браузеров: код должен работать в Chrome последней версии
+* Код должен быть размещен в CodeSandbox, либо в репозитории GitHub/GitLab/Bitbucket
+* Уделите внимание оптимизации кода, код не должен делать лишних перерендеров, которых можно было бы избежать
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Успехов! 
