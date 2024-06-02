@@ -1,6 +1,5 @@
-import React, { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import styles from "./App.module.scss";
-import { fetchListSpec } from "../../vendor/api/api";
 import { useServerData } from "../../vendor/hooks/useServerData";
 import Menu from "../Menu/Menu";
 import Courses from "../Courses/Courses";
@@ -23,7 +22,7 @@ function App() {
         : data?.filter((item) =>
             item.tags.some((tag) => tag === tags[activeIndex])
           ),
-    [activeIndex]
+    [activeIndex, data]
   );
   if (loading) {
     return <div>Loading...</div>;
