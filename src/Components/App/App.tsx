@@ -41,7 +41,7 @@ function App() {
           tags={tags}
         />
       )}
-      <Courses data={newData} />
+      {newData && <Courses data={newData} />}
     </main>
   );
 }
