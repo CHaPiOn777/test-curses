@@ -22,9 +22,9 @@ function App() {
         : data?.filter((item) =>
             item.tags.some((tag) => tag === tags[activeIndex])
           ),
-    [activeIndex, data]
+    [activeIndex, data, tags]
   );
-  if (loading) {
+  if (loading && !newData?.length) {
     return <div>Loading...</div>;
   }
 
@@ -34,14 +34,12 @@ function App() {
 
   return (
     <main className={styles.Main}>
-      {tags.length && (
-        <Menu
-          activeIndex={activeIndex}
-          setActiveIndex={setActiveIndex}
-          tags={tags}
-        />
-      )}
-      {newData && <Courses data={newData} />}
+      <Menu
+        activeIndex={activeIndex}
+        setActiveIndex={setActiveIndex}
+        tags={tags}
+      />
+      <Courses data={newData} />
     </main>
   );
 }

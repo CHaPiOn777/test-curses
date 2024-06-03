@@ -4,10 +4,8 @@
   width: 80vw;
   background: $white-color;
   padding: 24px;
+  padding-right: 0;
   height: 486px;
-  overflow-y: auto;
-  overflow-x: hidden;
   display: flex;
-  gap: 24px;
   position: relative;
 }
