@@ -13,21 +13,4 @@
     border-radius: $border-radius-card;
     max-width: 264px;
     width: 100%;
-
-    &Item {
-        padding: 12px;
-        cursor: pointer;
-        transition: all .3s ease-in-out;
-        opacity: 1;
-
-        &:hover {
-            opacity: 0.8;
-        }
-
-        &Active {
-            background-color: $green-color;
-            border-radius: $border-radius;
-            color: $white-color;
-        }
-    }
 }

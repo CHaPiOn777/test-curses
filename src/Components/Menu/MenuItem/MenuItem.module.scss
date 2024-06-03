@@ -1,29 +1,20 @@
 @import '../../../vendor/styles/variables';
 
-.List {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid $grey-color;
+.ListItem {
     padding: 12px;
-    max-width: fit-content;
-    border-radius: $border-radius-card;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    opacity: 1;
+    border: 1px solid transparent;
+    border-radius: $border-radius;
 
-    &Item {
-        padding: 12px;
-        cursor: pointer;
-        transition: all .3s ease-in-out;
-        opacity: 1;
-        border: 1px solid transparent;
+    &:hover {
+        opacity: 0.6;
+    }
+
+    &Active {
+        background-color: $green-color;
         border-radius: $border-radius;
-
-        &:hover {
-            opacity: 0.6;
-        }
-
-        &Active {
-            background-color: $green-color;
-            border-radius: $border-radius;
-            color: $white-color;
-        }
+        color: $white-color;
     }
 }
